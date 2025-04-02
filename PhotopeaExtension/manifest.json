@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Photopea Cleaner",
+  "version": "1.0",
+  "description": "Removes unnecessary elements from Photopea",
+  "icons": {
+    "128": "icon128.png"
+  },
+  "permissions": ["scripting"],
+  "host_permissions": ["*://*.photopea.com/*"],
+  "content_scripts": [{
+    "matches": ["*://*.photopea.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_end",
+    "all_frames": true
+  }]
+}

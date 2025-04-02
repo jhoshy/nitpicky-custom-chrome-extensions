@@ -1,0 +1,14 @@
+{
+      "manifest_version": 3,
+      "name": "Noation Calendar Column Highlighter",
+      "version": "1.0",
+      "description": "Highlights current day column in Notion Calendar",
+      "content_scripts": [
+        {
+          "matches": ["https://calendar.notion.so/*"],
+          "js": ["content.js"],
+          "css": ["style.css"], // optional
+          "run_at": "document_idle"
+        }
+      ]
+    }
